@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Meta template -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Original font "TT Norms" not on Google Fonts. Link to similar "Roboto" font. -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="brain-fm-clone.css">
+<title>Brain.fm</title>
+</head>
+
+<body>
+	<!-- Header containing logo and sign in/up links -->
+	<header>
+		<div style="flex-grow: 80;">
+			<!-- Logo is clickable, but just leads back to homepage as example. -->
+			<a href="brain-fm-clone.html"><img src="images/logo.png"
+				alt="brain-fm-logo"></a>
+		</div>
+		<div style="flex-grow: 2;">
+			<!-- Link leads bact to homepage if clicked. -->
+			<a href="brain-fm-clone.html">Sign In</a>
+		</div>
+		<div style="flex-grow: 18;">
+			<button type="button">Try for free</button>
+		</div>
+
+	</header>
+
+	<!-- Main body divided into 3 horizontal sections (rows) -->
+	<!-- Section 1 & 3 divided into two columns. -->
+	<section class="sec1">
+		<!-- 2 divs in sec1 given id attributes to aid styling -->
+		<div id="sec1-left">
+			<!-- h1 & h2 formatted in stylesheet to make h2 bigger than h1 -->
+			<h1>Functional Music to Improve</h1>
+			<h2>Focus in 15 Minutes</h2>
+
+			<p>Our science-first approach creates music that sounds
+				different-and affects your brain differently-than any other music.</p>
+			<!-- id used to format text in stylesheet -->
+			<p id="featured-in">Featured in</p>
+			<img id="clout" src="images/clout.png" alt=""> <br>
+			<button type="button">
+				Try 5 free <br>sessions
+			</button>
+		</div>
+		<!-- Separate div containing main image on right of section -->
+		<div id="sec1-right">
+			<img id="pic1" src="images/picture-1.gif" alt="">
+		</div>
+
+	</section>
+	<!-- Section 2 mostly empty space with one central <p> tag -->
+	<section class="sec2">
+		<p>Wanna see the science?</p>
+	</section>
+	<!-- Section 3 is essentially 2 identical columns with an image and text in both -->
+	<section class="sec3">
+		<div id="sec3-left">
+			<img src="images/picture-2.gif" alt="brain-wave-animation"> <br>
+			<h3>Patented Technology</h3>
+			<p>
+				Brain.fm holds patents on key processes for creating functional
+				music, including technology to elicit <b>strong neural phase
+					locking</b>-allowing populations of neurons to engage in various kinds
+				of coordinated activity-and technology to remove distraction in
+				sound.
+			</p>
+			<p>This makes our music unique, purpose-built to steer you into a
+				desired mental state. In other words, we've found new ways to create
+				music that helps you do what you need to do.</p>
+			<b style="text-decoration: underline;">Explore More of Our
+				Science</b>
+		</div>
+
+		<div id="sec3-right">
+			<img src="images/picture-3.png" alt="phase-locking-illustration">
+			<br>
+			<h3>Tested on Brain and Behavior</h3>
+			<p>Scientists at Brain.fm work with collaborators at academic
+				institutions to run experiments.</p>
+			<p>We look at the effects of our technology on the brain, using
+				fMRI and EEG, and also run large-scale behavioral tests, measuring
+				performance on simple games.</p>
+			<p>
+				<b>Our experiments always include a control condition
+					('placebo')</b> of the same underlying music without Brain.fm
+				technology applied, so we can be sure our tech is what makes the
+				difference.
+			</p>
+		</div>
+
+	</section>
+</body>
+
+</html>

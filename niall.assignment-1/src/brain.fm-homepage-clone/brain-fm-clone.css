@@ -1,0 +1,184 @@
+/* As mentioned in assignment brief, page is not properly optimised for different screens.*/
+/* Layout, especially overlapping of text on first image, may vary depending on screen size. */
+
+body {
+    /* Applied shared styles to whole body */
+    background-color: #4912f6;
+    /* Roboto font chosen as nearest Google equivalent, common backup fonts selected*/
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* Spacing adjusted to appear closer to example font */
+    letter-spacing: 1px;
+    color: #fff;
+    /* Flex-column to keep header and 3 sections aligned vertically.*/
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex box and justify/align used to position header elements */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    padding: 1% 4%;
+}
+
+/* Try to brighten logo so it's closer to example, it appears slightly brighter */
+header img {
+    filter: brightness(1000%);
+    /* Logo kept at fixed size and 1:2 ratio. */
+    height: 70px;
+    width: 210px;
+}
+
+/* Hyperlink set to white with opacity lowered to imitate example */
+header a {
+    color: #fff;
+    opacity: 75%;
+    font-size: x-large;
+    font-weight: 600;
+    /* Hyperlink default underline removed */
+    text-decoration: none;
+}
+
+/* Underline restored and opacity increased on hover */
+header a:hover {
+    opacity: 100%;
+    text-decoration: underline;
+}
+
+/* Subtle color gradient on buttons, colors matched using imagecolorpicker.com/ */
+header button {
+    background-image: linear-gradient(to right, #ea9e3d, #ee7c38);
+    color: #FFF;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 25px 50px;
+    border: 0px;
+    border-radius: 40px;
+}
+
+/* Hover change added since using button tag instead of input(button) */
+header button:hover {
+    text-decoration: underline;
+}
+
+/* Main(1st) section of page, padded to imitate example and using flex, align and justify for positioning. */
+/* % distances used for padding and margins in several places to improve compatibility with different screen sizes*/
+.sec1 {
+    font-size: xx-large;
+    padding: 10% 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left and right hand divs to separate text/button from main gif. */
+/* In example, text overlaps the image slightly. Negative margin and padding used to overlap divs. */
+/* z-axis indexes changed from default to show text on top of image.  */
+#sec1-left {
+    padding-top: 4%;
+    z-index: 2;
+}
+
+#sec1-right {
+    margin-left: -14%;
+    z-index: 1;
+}
+
+/* It is recommended to keep h1, h2... in order, so h1 is styled here to be smaller than h2. */
+h1 {
+    font-size: 1.75em;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.15em;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+/* Short paragraph styled to imitate example */
+.sec1 p {
+    font-size: 0.85em;
+    font-weight: 300;
+    opacity: 75%;
+    padding-right: 10%;
+}
+
+/* id attributes to control size of specific elements in section 1. */
+#featured-in {
+    font-size: medium;
+}
+
+#clout {
+    height: 40px;
+    width: 600px;
+}
+
+#pic1 {
+    height: 800px;
+    width: 1100px;
+}
+
+/* Button styled similarly to other button in header. */
+.sec1 button {
+    background-image: linear-gradient(to right, #ea9e3d, #ee7c38);
+    color: #FFFFFF;
+    margin-top: 5%;
+    padding: 35px 100px;
+    font-size: 0.8em;
+    font-weight: 700;
+    border-radius: 75px;
+    border: 0px;
+}
+
+.sec1 button:hover {
+    text-decoration: underline;
+}
+
+/* Mostly empty section 2 styling. Padding added to sections above and below.*/
+.sec2 {
+    font-size: x-large;
+    font-weight: 700;
+    opacity: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 3 similar to section 1, but both divs(columns) are nearly identical and not overlapping. */
+.sec3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    padding: 10%;
+}
+
+.sec3 img {
+    height: 300px;
+    width: 600px;
+    padding: 4%;
+}
+
+#sec3-left {
+    flex: 0 1 600px;
+    padding-right: 3%;
+}
+
+#sec3-right {
+    flex: 0 1 600px;
+    padding-left: 3%;
+}
+
+h3 {
+    font-size: 2em;
+}
