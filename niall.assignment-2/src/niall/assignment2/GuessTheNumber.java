@@ -22,7 +22,7 @@ public class GuessTheNumber {
 	// Method to generate and return random integer between 1 and 100 inclusive.
 	private static int randomNumberGenerator() {
 		Random random = new Random();
-		int randomInt = random.nextInt(1, 101);
+		int randomInt = random.nextInt(100) + 1;
 		return randomInt;
 	}
 
